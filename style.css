@@ -1,0 +1,520 @@
+/* Full background image for all pages */
+body {
+  background-image: url('images/my-background.jpg'); /* Replace with your actual file name */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Optional: keeps background still while scrolling */
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Centered wrapper for homepage content */
+
+.home-wrapper {
+  padding: 20px 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 50px auto 10px auto; /* top 50px, bottom 10px */
+}
+
+.logo-wrapper {
+  margin-bottom: 20px; /* Reduce space below logo */
+}
+
+/* Bigger logo */
+.logo-image {
+  max-width: 400px; /* You can increase this to 450 or 500 if needed */
+  height: auto;
+}
+
+/* Buttons styling */
+.btn-primary {
+  background-color: #d8a7b1;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin: 0 10px;
+}
+
+.btn-primary:hover {
+  background-color: #c08b9a;
+  color: white;
+}
+
+/* Call-to-action text */
+.cta-text {
+  font-size: 1.2rem;
+  color: #6d4c41;
+}
+
+
+
+
+/* Button group styles */
+.button-group {
+  margin-top: 280px;  /* push buttons below the decorative images */
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Example btn-primary styling */
+.btn-primary {
+  background-color: #d7a9b6;  /* soft pink */
+  color: #4a2c3a;
+  padding: 12px 22px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #b07889;
+}
+
+
+/* Make navbar fixed on top and add padding so content is not hidden behind it */
+nav, .navbar, header, .main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;  /* adjust if your navbar height differs */
+  z-index: 1000;
+  background-color: #d8a7b1 !important;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  box-shadow: none;
+}
+
+/* Push down all page content to avoid overlapping with fixed navbar */
+body {
+  padding-top: 60px; /* same height as navbar */
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9e8eb; /* soft pastel pink */
+  color: #5a3e46; /* muted mauve/dark pink */
+  margin: 0;
+  padding: 0;
+  padding-top: 70px; /* Add padding so content doesn't go under navbar */
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9e8eb;
+  color: #5a3e46;
+  margin: 0;
+  padding: 0;
+  padding-top: 80px; /* push content below fixed navbar */
+}
+
+main, .page-top, .content {
+  margin-bottom: 60px; /* pushes footer down */
+}
+main.container {
+  padding-top: 70px;
+  padding-bottom: 20px; /* adjust this value as needed */
+}
+
+.page-title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: black;  /* Change from pink to black */
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.site-title a {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.site-header {
+  background-color: #f9e6ec; /* very light pink background */
+}
+
+
+/* Navbar for all pages */
+nav, .navbar, header, .main-nav {
+  background-color: #d8a7b1 !important; /* consistent soft pastel pink */
+  box-shadow: none;
+  position: fixed; /* Fix navbar on top */
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+/* Navbar toggler (mobile) */
+.navbar-dark .navbar-toggler-icon {
+  filter: invert(40%) sepia(20%) saturate(400%) hue-rotate(320deg) brightness(90%) contrast(80%);
+}
+
+/* Nav links */
+.navbar-brand, nav a, .nav-link {
+  color: #5a3e46 !important;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover, nav a:hover, .nav-link:hover, .nav-link.active {
+  color: #b86b7a !important; /* pink hover */
+}
+
+/* Buttons */
+.btn-primary, button, .btn {
+  background-color: #b86b7a;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover, button:hover, .btn:hover {
+  background-color: #a35262;
+}
+.btn-outline-pink {
+  color: #b86b7a;
+  border: 2px solid #b86b7a;
+  background-color: transparent;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-pink:hover {
+  background-color: #b86b7a;
+  color: white;
+}
+.button-group {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+  color: #a35262;
+  margin-top: 0; /* Prevent unwanted margin pushing text under navbar */
+}
+
+/* Cards */
+.card {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(184, 107, 122, 0.2);
+  border: none;
+  background-color: white;
+}
+
+.card-title {
+  color: #b86b7a;
+  font-weight: 700;
+}
+
+/* Footer */
+footer, .site-footer {
+  background-color: #d8a7b1;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  margin-top: 60px;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #b86b7a;
+}
+
+/* Links */
+a {
+  color: #b86b7a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #fcddec;
+  color: #5a3e46;
+  margin-top: 220px;
+}
+
+
+.reviews-page footer {
+  margin-top: 3rem; 
+
+}
+
+
+.page-wrapper {
+  min-height: 80vh; /* Ensures the page takes up most of the screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+a:hover {
+  color: #a35262;
+  text-decoration: underline;
+}
+
+/* Form inputs (Contact) */
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  border: 2px solid #d8a7b1;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #5a3e46;
+  background-color: #fff0f3;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #b86b7a;
+  background-color: #fff5f7;
+}
+
+/* Images */
+.team-member img,
+.cake-image,
+.home-image {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(184, 107, 122, 0.3);
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.cake-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.home-image {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.image-row {
+  margin-top: 3rem; /* pushes images down */
+  row-gap: 10px; /* reduce vertical space between images */
+  column-gap: 10px; /* reduce horizontal space if needed */
+}
+
+.image-row .col-6 {
+  padding: 5px; /* controls space inside each column */
+}
+
+
+
+/* Containers & spacing */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.cake-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px 0;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.cake-gallery .cake-item {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(184, 107, 122, 0.15);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.cake-gallery .cake-item img {
+  width: 100%;
+  height: 200px;  /* fixed height for uniformity */
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.cake-gallery .cake-item .btn {
+  margin-top: auto;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #b86b7a;
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.cake-name, .gallery-title {
+  font-size: 2rem;       /* Bigger headings */
+  font-weight: 700;
+  color: #111111;        /* Darker text */
+}
+
+.cake-gallery .cake-item .btn:hover {
+  background-color: #a35262;
+}
+
+/* Responsive: 2 columns on small screens */
+@media (max-width: 768px) {
+  .cake-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+.py-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.mb-5 {
+  margin-bottom: 3rem !important;
+}
+
+/* Cake gallery grid fix */
+.cake-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.cake-gallery .cake-item {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(184, 107, 122, 0.15);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.cake-gallery .cake-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.cake-gallery .cake-item .cake-name {
+  font-weight: 700;
+  color: #b86b7a;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.cake-gallery .cake-item .cake-price {
+  font-weight: 600;
+  color: #a35262;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.cake-gallery .cake-item .btn {
+  align-self: center;
+  margin-top: auto;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  border-radius: 8px;
+}
+.gallery-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #b86b7a;
+}
+
+
+/* Responsive nav */
+@media (max-width: 768px) {
+  nav ul.nav,
+  .navbar-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cake-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Misc small fixes */
+.text-center {
+  text-align: center !important;
+}
+
+.text-warning {
+  color: #b86b7a !important;
+  font-size: 1.2rem;
+}
+
+.shadow-sm {
+  box-shadow: 0 1px 3px rgba(184, 107, 122, 0.15) !important;
+}
+
+.border-0 {
+  border: none !important;
+}
+body, p, h1, h2, h3, a, button, li {
+  font-size: 18px;       /* Bigger, easier to read */
+  color: #222222;        /* Dark gray for good contrast */
+  font-weight: 600;      /* Slightly bolder */
+  line-height: 1.6;      /* Comfortable spacing */
+}
+
+.cake-name, .gallery-title {
+  font-size: 2rem;       /* Bigger headings */
+  font-weight: 700;
+  color: #111111;        /* Darker text */
+}
