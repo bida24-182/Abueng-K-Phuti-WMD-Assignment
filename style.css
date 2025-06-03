@@ -1,16 +1,16 @@
-/* Full background image for all pages */
+
 body {
-  background-image: url('images/my-background.jpg'); /* Replace with your actual file name */
+  background-image: url('images/my-background.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Optional: keeps background still while scrolling */
+  background-attachment: fixed; 
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* Centered wrapper for homepage content */
+
 
 .home-wrapper {
   padding: 20px 40px;
@@ -21,16 +21,16 @@ body {
 }
 
 .logo-wrapper {
-  margin-bottom: 20px; /* Reduce space below logo */
+  margin-bottom: 20px; 
 }
 
 /* Bigger logo */
 .logo-image {
-  max-width: 400px; /* You can increase this to 450 or 500 if needed */
+  max-width: 400px; 
   height: auto;
 }
 
-/* Buttons styling */
+
 .btn-primary {
   background-color: #d8a7b1;
   color: white;
@@ -56,7 +56,7 @@ body {
 
 
 
-/* Button group styles */
+
 .button-group {
   margin-top: 280px;  /* push buttons below the decorative images */
   display: flex;
